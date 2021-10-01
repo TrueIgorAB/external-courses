@@ -1,15 +1,5 @@
-function GetMaxElementOfArr(array) {
-  let max = 0;
-  array.forEach((item) => {
-    if (item < 0 || typeof (item) !== 'number') {
-      return undefined;
-    }
-    if (item > max) {
-      max = item;
-    }
-    return max;
-  });
-  return max;
+function getMaxElementOfArr(array) {
+  return Math.max(...array);
 }
 
-module.exports = GetMaxElementOfArr;
+module.exports = getMaxElementOfArr;

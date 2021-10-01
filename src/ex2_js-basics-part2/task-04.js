@@ -1,6 +1,7 @@
-function GetequalityElementOfArr(array) {
+function getEqualityElementOfArr(array) {
   const zeroElement = array[0];
-  return !array.some((item) => item !== zeroElement);
+
+  return array.every((item) => item === zeroElement);
 }
 
-module.exports = GetequalityElementOfArr;
+module.exports = getEqualityElementOfArr;
