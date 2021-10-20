@@ -9,13 +9,9 @@ function deleteFirstAndLastWhitespace(str) {
     }
   });
 
-  const firstSpace = Math.min(...spacesIndex);
+  newString.splice(spacesIndex[0], 1);
 
-  const lastSpace = Math.max(...spacesIndex) - 1;
-
-  newString.splice(firstSpace, 1);
-
-  newString.splice(lastSpace, 1);
+  newString.splice((spacesIndex[spacesIndex.length - 1] - 1), 1);
 
   return newString.join('');
 }

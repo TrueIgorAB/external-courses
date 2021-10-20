@@ -1,7 +1,5 @@
 function createObjWithoutPrototype() {
-  const user = {};
-
-  user.__proto__ = null;
+  const user = Object.create(null);
 
   return user;
 }
