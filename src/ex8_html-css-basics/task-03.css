@@ -1,0 +1,11 @@
+.firstBrd {
+    border: 3px solid red;
+}
+
+.secondBrd {
+    outline: 3px solid blue;
+}
+
+.thirdBrd {
+    box-shadow: 0 0 0 1px black;
+}

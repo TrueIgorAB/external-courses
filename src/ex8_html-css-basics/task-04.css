@@ -1,0 +1,40 @@
+@import "task-04_import.css";
+
+body {
+    background-color: rgb(183, 184, 183);
+}
+h1 {
+    color: purple;
+}
+
+h2 {
+    color: rgb(153, 86, 86);
+}
+
+h3 {
+    color: #672785;
+}
+
+#box {
+    width: 600px;
+    height: 4in;
+    background-image:url("https://cdn.pixabay.com/photo/2021/09/02/02/34/sunset-6592545_960_720.jpg");
+}
+
+.description {
+    color: rgb(7, 3, 63);
+}
+
+.nested {
+    color: rgb(168, 115, 168)
+}
+
+.paragraphs {
+    width: 80%;
+    height: 18em;
+    border: 3px solid purple;
+}
+
+.image {
+    width: 200px;
+}

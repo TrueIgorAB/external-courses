@@ -1,0 +1,11 @@
+.container {
+    background-color: green;
+}
+
+.none {
+    list-style-type: none;
+}
+
+.image {
+    width: 150px;
+}
