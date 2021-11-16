@@ -1,0 +1,29 @@
+.container {
+    width: 212px;
+    height: 59px;
+    margin-left: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid black;
+    border-radius: 15px;
+}
+
+.btn {
+    border: 6px solid #c8bfbf;
+    outline: 1px solid white;
+    background: linear-gradient(rgb(255 255 255), #9f9797);
+    width: 210px;
+    height: 58px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    font-variant: lighter;
+    font-weight: 900;
+    cursor: pointer;
+}
+.star:before {
+    content: "\2605";
+    font-style: initial;
+}
