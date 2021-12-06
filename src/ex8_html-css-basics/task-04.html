@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="task-04" content="HTML">
+    <title>HTML Basics</title>
+    <link href="task-04.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <style>
+        p {
+            color:#444444;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Basics</h1>
+    <h2>Lists</h2>
+    <h3>Ordered list</h3>
+    <ol>
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+        <li>fourth item</li>
+        <li>fifth item</li>
+    </ol>
+    <h3>Unordered list</h3>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+    </ul>
+    <div id="box">
+        <h3>Description List</h3>
+        <dl class="description">
+            <dt>Name</dt>
+            <dd>Godzilla</dd>
+            <dt>Born</dt>
+            <dd>1952</dd>
+            <dt>Birthplace</dt>
+            <dd>Japan</dd>
+            <dt>Color</dt>
+            <dd>Green</dd>
+        </dl>
+        <h3>Nested List</h3>
+        <ul class="nested">
+            <li>List item one</li>
+            <li>List item two with subitems</li>
+            <li class="none"><ul>
+                <li>Subitem 1</li>
+                <li class="none"><ul>
+                    <li>SubSubitem 1</li>
+                    <li>SubSubitem 2</li>
+                </ul></li>
+                <li>Subitem 2</li>
+            </ul></li>
+            <li>Final list item</li>
+        </ul>
+    </div>
+    <div>
+        <h3>List with links</h3>
+        <ul>
+            <li><a href="https://learn.webpurple.net/">Home</a></li>
+            <li><a href="https://webpurple.github.io/learn/">News</a></li>
+            <li><a href="https://webpurple.github.io/learn/">Contact</a></li>
+            <li><a href="https://webpurple.github.io/learn/">About</a></li>
+        </ul>
+    </div>
+    <hr>
+    <h2>Paragraphs</h2>
+    <div class="paragraphs">
+    <p style="overflow-wrap: normal;">
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+       Etiam condimentum augue a efficitur semper. 
+       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+       Quisque dictum erat quis urna vulputate luctus. Etiam accumsan nisl quis imperdiet posuere. 
+       Suspendisse potenti. Ut luctus ipsum non commodo pulvinar. Morbi tempor nibh eu mi ultricies mattis.
+    </p>
+
+    <p style="text-transform: lowercase;">
+       Curabitur sed elit auctor felis semper pretium in eu lacus. <br>
+       Integer sed odio velit. Proin ornare turpis eu leo iaculis, sit amet posuere mi accumsan. <br>
+       Nunc tristique, ipsum non ultricies volutpat, dui quam convallis mi, a laoreet odio elit nec nisl. <br>
+       Cras non blandit dolor. Quisque et urna id nisl malesuada laoreet nec in lectus. <br>
+       Phasellus viverra sodales dui. In eu pulvinar est.<br>
+       Onec semper tempor ipsum, a consectetur enim ultricies ullamcorper.<br>
+       Phasellus ex ante, placerat varius sem nec, dignissim auctor tortor.<br>
+       Donec laoreet sagittis elit, non pulvinar quam vestibulum eget.<br>
+       Maecenas tristique fermentum pellentesque. Etiam in rutrum elit.<br>
+       Vestibulum in nibh commodo, viverra lacus gravida, porttitor felis.<br>
+    </p>
+
+    </div>
+    <hr>
+    <h2>Tables</h2>
+    <table>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Doe</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Image</h2>
+    <img src="https://cdn.pixabay.com/photo/2021/09/02/16/48/cat-6593947_960_720.jpg" alt="Cat" class="image">
+    <hr>
+    <h2>Pre tag</h2>
+    <pre>
+        if (time = 20) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening"
+        }
+    </pre>
+</body>
+</html>
