@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Kanban" content="Board">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="drop-down-list.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <section id="app-logo" class="header__item">
+                <img src="logo.svg" alt="icon">
+                <h1>Awesome Kanban Board</h1>
+            </section>
+
+            <section id="create-list" class="header__item">
+                <img src="add-list.svg" alt="plus">
+                <h2>Create new list</h2>
+            </section>
+
+            <div id="drop-down-list">
+                <nav id="user-menu" class="header__item" onclick="toggleList()">
+                    <img src="user-avatar.svg" alt="user" id="avatar">
+                    <img src="arrow-down.svg" alt="arrow" id="arrow">
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <footer>
+        <div class="footer">
+            <section id="active" class="footer__item">
+                <h3>Active tasks: &ltN&gt</h3>
+            </section>
+
+            <section id="finished" class="footer__item">
+                <h3>Finished tasks: &ltM&gt</h3>
+            </section>
+
+            <section id="info" class="footer__item">
+                <h3>Kanban board by &ltNAME&gt, &ltYEAR&gt</h3>
+            </section>
+        </div>
+    </footer>
+    <script async src="drop-down-list.js"></script>
+</body>
+</html>
