@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Kanban" content="Board">
+    <title>Kanban</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="drop-down-list.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <section id="app-logo" class="header__item">
+                <img src="logo.svg" alt="icon">
+                <h1>Awesome Kanban Board</h1>
+            </section>
+
+            <section id="create-list" class="header__item">
+                <img src="add-list.svg" alt="plus">
+                <h2>Create new list</h2>
+            </section>
+
+            <div id="drop-down-list">
+                <nav id="user-menu" class="header__item" onclick="toggleList()">
+                    <img src="user-avatar.svg" alt="user" id="avatar">
+                    <img src="arrow-down.svg" alt="arrow" id="arrow">
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <section class="board-main">
+                <div class="header__board">
+                    <p>Backlog</p>
+                    <img src="•••.svg" alt="•••">
+                </div>
+                <nav>
+                    <ul id="backlog-tasks" class="main-field"></ul>
+                    <button id="backlog-add" class="kanban-add-item" type="button" onclick="showNewBacklogField()">+ Add card</button>
+                </nav>
+            </section>
+
+            <section class="board-main" id="test">
+                <div class="header__board">
+                    <p>Ready</p>
+                    <img src="•••.svg" alt="•••">
+                </div>
+                <ul id="ready-tasks" class="main-field"></ul>
+                <button id="ready-add" class="kanban-add-item" type="button" onclick="showDropdown('ready', 'backlog', 'progress')">+ Add card</button>
+            </section>
+
+            <section class="board-main">
+                <div class="header__board">
+                    <p>In progress</p>
+                    <img src="•••.svg" alt="•••">
+                </div>
+                <ul id="progress-tasks" class="main-field"></ul>
+                <button id="progress-add" class="kanban-add-item" type="button" onclick="showDropdown('progress', 'ready', 'finished')">+ Add card</button>
+            </section>
+
+            <section class="board-main">
+                <div class="header__board">
+                    <p>Finished</p>
+                    <img src="•••.svg" alt="•••">
+                </div>
+                <ul id="finished-tasks" class="main-field"></ul>
+                <button id="finished-add" class="kanban-add-item" type="button" onclick="showDropdown('finished', 'progress')">+ Add card</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <section id="active" class="footer__item">
+                <h3>Active tasks: &ltN&gt</h3>
+            </section>
+
+            <section id="finished" class="footer__item">
+                <h3>Finished tasks: &ltM&gt</h3>
+            </section>
+
+            <section id="info" class="footer__item">
+                <h3>Kanban board by &ltNAME&gt, &ltYEAR&gt</h3>
+            </section>
+        </div>
+    </footer>
+    <script async src="drop-down-list.js"></script>
+    <script async src="main-elements.js"></script>
+</body>
+</html> 

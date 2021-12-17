@@ -1,0 +1,33 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    background: #0067A3;
+}
+
+.footer__item >  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+#active {
+    margin-left: 100px;
+}
+
+#finished{
+    margin-left: 50px;
+}
+
+#info{
+    position: absolute;
+    right: 50px;
+}  
