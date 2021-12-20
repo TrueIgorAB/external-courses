@@ -1,0 +1,23 @@
+.table * {
+    font-weight: lighter;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+#header * {
+    padding: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.even td, .odd td{
+    padding: 15px;
+}
+.name {
+    text-transform: capitalize;
+}
+.even{
+    background: rgb(236, 236, 252);
+}
+.odd {
+    background: rgb(223, 223, 250);
+}

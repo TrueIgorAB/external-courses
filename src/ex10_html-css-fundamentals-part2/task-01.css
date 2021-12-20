@@ -1,0 +1,17 @@
+.container{
+  margin: 0 auto;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  transform: rotate(45deg);
+}
+.container1 {
+  transform: rotate(-45deg);
+  overflow: inherit;
+  width: 250px;
+  height: 250px;
+}
+ 
+img {
+  border-radius: 50%;
+}

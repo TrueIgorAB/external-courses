@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="task-02" content="html">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="http://httpbin.org/get" method="get" autocomplete="off"></form> -->
+    
+    <form action="http://httpbin.org/post" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Personal data</legend>
+
+            <p>
+                <label for="surname">Surname </label>
+                <input type="text" name="Surname">
+            </p>
+
+            <p>
+                <label for="first Name">First Name </label>
+                <input type="text" name="First Name">
+            </p>
+
+            <p>
+                <label for="middle Name">Middle Name </label>
+                <input type="text" name="Middle Name">
+            </p>
+
+                <label for="you are">You are</label>
+                <input id="male" type="radio" name="you are">
+                <label for="male">male</label>
+                <input id="female" type="radio" name="you are">
+                <label for="female">female</label>
+
+            <p>
+                <label for="number">Age </label>
+                <input type="number" min="18" max="101" name="age">
+            </p>
+
+            <p>
+                <label for="country">Country of Residence</label>
+
+                <select name="country">
+                    <option value="Russia">Russia</option>
+                    <option value="UK">UK</option>
+                    <option value="USA">USA</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="city">City</label>
+
+                <input id="Ryazan" type="checkbox" name="city">
+                <label for="Ryazan">Ryazan</label>
+
+                <input id="Moscow" type="checkbox" name="city">
+                <label for="Moscow">Moscow</label>
+            </p>
+
+            <p>
+                <label for="photography">Photography</label>
+
+                <input id="file" type="file" name="photography">
+            </p>
+
+            <hr>
+
+            <p>
+            <label>Title
+                <select name="title" multiple size="8">
+                  <optgroup label="Technologies">
+                    <option value="Web Master">Web Master</option>
+                    <option value="Database Administration">Database Administration</option>
+                    <option value="Computer-aided design">Computer-aided design</option>
+                  </optgroup>
+                  <optgroup label="Finance">
+                    <option value="Economic Planning">Economic Planning</option>
+                    <option value="Management accountin">Management accounting</option>
+                    <option value="Budgeting and planning">Budgeting and planning</option>
+                  </optgroup>
+                </select>
+              </label>
+            </p>
+
+            <p>
+                <label for="salary">Salary </label>
+                <input id="salary" type="range" name="salary">
+            </p>
+
+            <textarea name="about user" placeholder="Tell us about yourself..." cols="50" rows="10"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <p>
+                <label for="site">Site </label>
+                <input id="site" type="url" name="site">
+            </p>
+
+            <p>
+                <label for="email">Email </label>
+                <input id="email" type="email" name="email">
+            </p>
+
+            <p>
+                <label for="phone">Phone </label>
+                <input id="phone" type="tel" name="phone">
+            </p>
+
+        </fieldset>
+
+        <p>
+            <label for="pass">Password </label>
+            <input id="pass "type="password" name="pass" required>
+        </p>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+
+    </form>
+</body>
+</html>
